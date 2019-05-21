@@ -2,11 +2,7 @@ import React from 'react';
 import { SectionList, Image, StyleSheet, Text, View } from 'react-native';
 import { Constants } from 'expo';
 
-export default class SettingsScreen extends React.Component {
-  static navigationOptions = {
-    title: 'Settings',
-  };
-
+export default class ExpoConfigView extends React.Component {
   render() {
     const { manifest } = Constants;
     const sections = [
