@@ -19,9 +19,7 @@ ProfileStack.navigationOptions = {
     <TabBarIcon
       focused={focused}
       name={
-        Platform.OS === 'ios'
-          ? `ios-information-circle${focused ? '' : '-outline'}`
-          : 'md-information-circle'
+        Platform.OS === 'ios' ? `ios-person` : 'md-person'
       }
     />
   ),
@@ -36,7 +34,7 @@ HistoryStack.navigationOptions = {
   tabBarIcon: ({ focused }) => (
     <TabBarIcon
       focused={focused}
-      name={Platform.OS === 'ios' ? 'ios-link' : 'md-link'}
+      name={Platform.OS === 'ios' ? 'ios-browsers' : 'md-browsers'}
     />
   ),
 };
@@ -50,7 +48,7 @@ NewWorkoutStack.navigationOptions = {
   tabBarIcon: ({ focused }) => (
     <TabBarIcon
       focused={focused}
-      name={Platform.OS === 'ios' ? 'ios-options' : 'md-options'}
+      name={Platform.OS === 'ios' ? 'ios-add' : 'md-add'}
     />
   ),
 };
@@ -64,7 +62,7 @@ ExercisesStack.navigationOptions = {
   tabBarIcon: ({ focused }) => (
     <TabBarIcon
       focused={focused}
-      name={Platform.OS === 'ios' ? 'ios-options' : 'md-options'}
+      name={Platform.OS === 'ios' ? 'ios-menu' : 'md-menu'}
     />
   ),
 };
@@ -78,7 +76,7 @@ SettingsStack.navigationOptions = {
   tabBarIcon: ({ focused }) => (
     <TabBarIcon
       focused={focused}
-      name={Platform.OS === 'ios' ? 'ios-options' : 'md-options'}
+      name={Platform.OS === 'ios' ? 'ios-settings' : 'md-settings'}
     />
   ),
 };

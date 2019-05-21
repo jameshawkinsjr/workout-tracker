@@ -3,7 +3,7 @@ import { ExpoConfigView } from '@expo/samples';
 
 export default class ExercisesScreen extends React.Component {
   static navigationOptions = {
-    title: 'app.json',
+    title: 'Exercises',
   };
 
   render() {

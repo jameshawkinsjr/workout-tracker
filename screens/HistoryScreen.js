@@ -4,7 +4,7 @@ import { ExpoLinksView } from '@expo/samples';
 
 export default class HistoryScreen extends React.Component {
   static navigationOptions = {
-    title: 'Links',
+    title: 'History',
   };
 
   render() {
