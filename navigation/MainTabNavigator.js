@@ -8,6 +8,7 @@ import HistoryScreen from '../screens/HistoryScreen';
 import NewWorkoutScreen from '../screens/NewWorkoutScreen';
 import ExercisesScreen from '../screens/ExercisesScreen';
 import SettingsScreen from '../screens/SettingsScreen';
+import Colors from '../constants/Colors';
 
 const ProfileStack = createStackNavigator({
   Profile: ProfileScreen,
@@ -81,10 +82,18 @@ SettingsStack.navigationOptions = {
   ),
 };
 
-export default createBottomTabNavigator({
-  ProfileStack,
-  HistoryStack,
-  NewWorkoutStack,
-  ExercisesStack,
-  SettingsStack,
-});
+export default createBottomTabNavigator(
+  {
+    ProfileStack,
+    HistoryStack,
+    NewWorkoutStack,
+    ExercisesStack,
+    SettingsStack,
+  },
+  {
+    tabBarOptions: {
+      activeTintColor: Colors.tabIconSelected,
+      inactiveTintColor: Colors.tabIconDefault,
+    }
+  }
+);
